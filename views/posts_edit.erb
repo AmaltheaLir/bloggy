@@ -1,0 +1,39 @@
+
+<h1>All Posts Edit Table Page</h1>
+<p>make changes by selecting an option next to the desired post (Delete or Edit)</p>
+
+
+<table class="table" border='1' width='100%'>
+
+<% @posts.each do | post| %>
+  <tr>
+    <td>
+      <%=  post[:id] %>
+    </td>
+    <td>
+      <%=  post[:title] %>
+    </td>
+    <td>
+      <%=  post[:author] %>
+    </td>
+    <td>
+      <%=  post[:date_added] %>
+    </td>
+    <td>
+      <%=  post[:content] %>
+    </td>
+
+  
+    <td>
+      <form method="post" action="/posts/<%= post[:id] %>/remove">
+        <input type='submit' value='Delete FOREVER'\>
+      </form>
+      
+      <a href="/posts/<%= post[:id] %>/edit">post_edit_form</a>
+            
+
+    </td>
+  </tr>
+<% end %>
+</table>
+

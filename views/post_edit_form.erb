@@ -1,0 +1,35 @@
+#for editing individual posts, with form edit boxes and whatnot. put. 
+
+
+<h1>Individual Post Edit Page</h1>
+<p>Edit the post title, author or content here</p>
+
+<form method="post" action="/posts/<%= @post[:id] %>">
+
+<label for="title">Title:</label><br>
+<textarea name="title" id="title" cols="30" rows="2"><%= @post[:title] %>
+</textarea><br>
+
+<label for="author">Author:</label><br>
+<textarea name="author" id="author" cols="30" rows="2"><%= @post[:author] %>
+</textarea><br>
+
+<label for="date_added">Date:</label><br>
+<textarea name="date_added" id="date_added" cols="30" rows="10"><%= @post[:date_added] %>
+</textarea><br>
+
+<label for="body">Body:</label><br>
+<textarea name="content" id="body" cols="30" rows="10"><%= @post[:content] %>
+</textarea>
+
+
+
+<br><br>
+
+<input type="hidden" name="_method" value="put">
+
+<input type='submit' value='You can UPDATE your database now'\>
+</form>
+
+
+

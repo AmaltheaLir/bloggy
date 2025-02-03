@@ -1,0 +1,82 @@
+https://rubymonstas.ch/materials/canonical/session33/session33-exercises.pdf
+
+Sinatra cheat sheet: https://github.com/matt297/sinatra-dev-cheatsheet?tab=readme-ov-file#using-a-layout
+
+repository sinatra-test: https://github.com/nerdinand/sinatra-test
+
+DID: latest- updated git to github
+- got the biuild to run in Docker, added Public file (photos)
+- Got Kamal set up
+- put files in Ignore
+- arm-wrestled with git
+
+NEXT TIME: Install Ruby to WSL (find W PW..) 
+- Bloot de doos magic time? 
+
+*****need to Complete setting up for rbenv, dependencies :
+https://github.com/rbenv/ruby-build/wiki#ubuntudebianmint
+apt-get install autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev]
+
+Last accomplished: 
+-add image (in layout)
+-date fun start
+-layout start
+-straightened up the linky things confusion. 
+-cleared out some WIP elements
+-some text fixes
+-added new postlet
+
+
+Todo:
+## In create new post, make box for Content larger
+
+**Is there a 'logout' function that should be added?  *Basic Auth - no, browser just remembers password, only can delete forget via browser
+  Gems: 
+  Rails - Warden (w/rack) See Mike sinn 
+
+
+###How to
+  -add pics option? <input type="file">
+
+Q? How to do next steps, is functionality 'finished'? (haha)
+
+Q how to Make Pretty
+
+#*#*#*#*# 
+DEPLOY NOTES:
+Kamal https://kamal-deploy.org/
+Docker https://www.docker.com/
+WSL Windows - linux on Windows install instructions https://learn.microsoft.com/en-us/windows/wsl/install
+
+??? Do I need this Ruby version control? https://rbenv.org/ 
+
+More links, all having to do with WSL and how to use it, incl with VSC, etc:
+
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
+
+SALE: Rails 
+https://pragmaticstudio.com/rails
+
+
+Originally ass-ign-ment
+1. Create a new file with the name app.rband require Sinatra and Sequel. Furthermore, create the
+get “/”action to fetch the posts from the database and render the poststemplate.
+2. Create a new directory with the name viewsand create a new file posts.erbin this directory and
+add the HTML + ruby code to render the posts.
+3. Create the post “/posts”action in app.rbto retrieve a new post, save it to the database and
+redirect the browser to the created post.
+4. Create the get “/posts/:id” action to show the post with the given post id in app.rb.
+5. Create a new file with the name post.erb in the views directory and the HTML + ruby code to display a blog post.
+6. Create the get “/posts/:id/edit” action to render the edit form and the put “/posts/:id”
+action to update the post with the given post id.
+7. Create a new file with the name post_edit.erb in the views directory and the HTML + ruby code
+to edit a blog post.
+####a. You need to add <input type="hidden" name="_method" value="put">to your
+form to send the form via put instead of post.
+
+
+Temp workspaceship:
+
+/mnt$ cd /mnt/c/Users/serra/Desktop/learning/Ruby/rm-33-blog-sinatra

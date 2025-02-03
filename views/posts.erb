@@ -1,0 +1,45 @@
+#main
+
+<p>There are even better ways to waste your time</p>
+
+<p>The current day and time is: <%= @time_of_day %></p>
+
+<% @posts.each do | post| %>
+  <br>
+   <a href="/posts/<%= post[:id] %>"><%= post[:title] %></a>
+<% end %>
+<br>
+
+<p><a href="/admin">SECRET TUNNELLLLLLLL!!!!!</a></p>
+
+<div action='/' method='get' width='100%'>
+<br>
+
+<h3>Posts as a Scrolly Polly List:</h3>
+
+<% @posts.each do | post| %>
+  <h2><%= post[:id] %></h2>
+
+  <h2>
+    <%= post[:title] %>
+  </h2>
+
+  <p>
+    <%= post[:author] %>
+  </p>
+
+  <p>
+    <%= post[:date_added] %>
+  </p>
+ 
+  <p>
+    <%= post[:content] %>
+  </p>
+
+<% end %>
+</div>
+<br>
+
+
+
+
