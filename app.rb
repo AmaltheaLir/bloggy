@@ -18,6 +18,10 @@ end
 
 DB = Sequel.sqlite('storage/app.db')
 
+get '/up' do
+  status(200)
+end
+
 get '/' do
   @posts = DB[:posts]
   @time_of_day = Time.now.to_s

@@ -2,7 +2,7 @@
 service: best-blog-ever
 
 # Name of the container image.
-image: AmaltheaLir/rm-33-blog-sinatra
+image: amalthealir/rm-33-blog-sinatra
 
 # Deploy to these servers.
 servers:
