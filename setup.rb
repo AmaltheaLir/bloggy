@@ -1,7 +1,7 @@
 require 'sequel'
 
 # change to add the required details to generate a table
-DB = Sequel.sqlite('app.db')
+DB = Sequel.sqlite('storage/app.db')
 
 DB.create_table :posts do
   primary_key :id

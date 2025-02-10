@@ -10,7 +10,7 @@ COPY Gemfile Gemfile.lock config.ru ./
 
 RUN bundle install
 
-COPY --parents app.rb ./views/ ./public/ ./
+COPY --parents setup.rb app.rb ./views/ ./public/ ./
 
 RUN useradd appuser --create-home --shell /bin/bash 
 RUN chown -R appuser:appuser /app
