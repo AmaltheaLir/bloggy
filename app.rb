@@ -16,7 +16,7 @@ def authorized?
 end
 
 
-DB = Sequel.sqlite('storage/dog.db')
+DB = Sequel.sqlite('storage/app.db')
 
 get '/up' do
   status(200)
