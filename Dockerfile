@@ -11,6 +11,7 @@ COPY Gemfile Gemfile.lock config.ru ./
 RUN bundle install
 
 COPY --parents setup.rb app.rb ./views/ ./public/ ./
+RUN mkdir storage
 
 RUN useradd appuser --create-home --shell /bin/bash 
 RUN chown -R appuser:appuser storage
