@@ -3,11 +3,6 @@ require 'sequel'
 require 'sqlite3'
 set :environment, :production
 
-# configure do
-  disable :protection
-# end
-
-
 #define your autehentication method
 def protected!
   return if authorized?
