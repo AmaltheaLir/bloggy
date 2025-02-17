@@ -10,24 +10,17 @@ DID: latest- updated git to github
 - put files in Ignore
 - arm-wrestled with git
 
-NEXT TIME: Install Ruby to WSL (find W PW..) 
-- Bloot de doos magic time? 
-
-*****need to Complete setting up for rbenv, dependencies :
-https://github.com/rbenv/ruby-build/wiki#ubuntudebianmint
-apt-get install autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libgmp-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev uuid-dev]
-
-Last accomplished: 
--add image (in layout)
--date fun start
--layout start
--straightened up the linky things confusion. 
--cleared out some WIP elements
--some text fixes
--added new postlet
+- Thomas figured out the rack protect failure! We got it deployed! Yaayy!
+(now health check fails. Says sth about rack protection. 
+Look into the thing with the /up ... whyyyyy things idk
+see this thingy thing:
+https://github.com/sinatra/sinatra/blob/main/rack-protection/lib/rack/protection/host_authorization.rb  )
 
 
 Todo:
+
+*Make date column in setup.rb
+*add some posts
 ## In create new post, make box for Content larger
 
 **Is there a 'logout' function that should be added?  *Basic Auth - no, browser just remembers password, only can delete forget via browser

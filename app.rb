@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'sequel'
 require 'sqlite3'
+
+#for local, don't use line below
 set :environment, :production
 
 #define your autehentication method
