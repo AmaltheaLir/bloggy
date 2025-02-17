@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sequel'
 require 'sqlite3'
+set :environment, :production
 
 # configure do
   disable :protection
