@@ -2,9 +2,9 @@ require 'sinatra'
 require 'sequel'
 require 'sqlite3'
 
-configure do
+# configure do
   disable :protection
-end
+# end
 
 
 #define your autehentication method
