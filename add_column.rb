@@ -1,6 +1,6 @@
 require 'sequel'
 
-DB = Sequel.sqlite('app.db')
+DB = Sequel.sqlite('storage/app.db')
 
 posts = DB[:posts]
 
